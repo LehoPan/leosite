@@ -1,21 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Ubuntu;
-}
-
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    font-family: 'Lucida Console';
 }
 
 body {
@@ -24,10 +11,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -43,17 +30,6 @@ body {
     border-top: 30px solid #6ca190;
     border-radius: 2px;
 }
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
 
 .menu-bar {
     position: fixed;
