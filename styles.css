@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu Mono');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Console';
+    font-family: 'Ubuntu Mono';
+}
+
+html {
+    overflow: hidden;
 }
 
 body {
@@ -17,18 +23,33 @@ body {
     flex-wrap: wrap;
 }
 
-.container {
+.title_container {
     position: relative;
     display: flex;
-    width: 60vh;
-    height: 10vh;
     background-color: #ffffff;
     color: #000000;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
-    border-top: 30px solid #6ca190;
+    border-top: 3vh solid #6ca190;
     border-radius: 2px;
+    width: 60vh; 
+    height: 10vh; 
+    margin-top: 4vh; 
+    flex-direction: column;
+}
+
+.container {
+    padding: 1vh;
+    position: relative;
+    display: flex;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
+    border-top: 3vh solid #6ca190;
+    border-radius: 2px;
+    margin: 1vh; 
+    flex-direction: column;
 }
 
 .menu-bar {
@@ -58,4 +79,12 @@ body {
     left: -2vh;
     width: 7vh;
     height: 7vh;
+} 
+
+.picture {
+    width: 25vh;
+    height: 20vh;
+    background-color: #7ebeaa;
+    border: 2px solid #000000;
+    margin: 1vh;
 }
